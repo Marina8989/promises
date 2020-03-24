@@ -53,3 +53,25 @@ const followersArray = [];
   luishrd
   bigknell
 */
+
+const mar = obj => {
+    const card = document.createElement("div");
+    const newImage = document.createElement("img");
+    const cardInfo = document.createElement("div");
+    const h3 = document.createElement("h3");
+    const pUserName = document.createElement("p");
+    const pLocation = document.createElement("p");
+    const pProfile = document.createElement("p");
+    const a = document.createElement("a");
+    const pFollowers = document.createElement("p");
+    const pFollowing = document.createElement("p");
+    const pBio = document.createElement("p");
+
+    card.classList.add("card");
+    newImage.src =
+        "https://previews.123rf.com/images/captainvector/captainvector1602/captainvector160218152/52863657-smiley-face-showing-thumbs-up.jpg";
+    cardInfo.classList.add(card - info);
+    h3.classList.add("name");
+};
+
+axios.get("https://api.github.com/users/Marina8989");
