@@ -55,6 +55,7 @@ const followersArray = [];
 */
 
 const mar = obj => {
+    const cards = document.querySelector(".cards");
     const card = document.createElement("div");
     const newImage = document.createElement("img");
     const cardInfo = document.createElement("div");
@@ -81,6 +82,18 @@ const mar = obj => {
     pBio.textContent = "Bio: ";
 
     pProfile.appendChild(a);
+    cardInfo.appendChild(h3);
+    cardInfo.appendChild(pUserName);
+    cardInfo.appendChild(pLocation);
+    cardInfo.appendChild(pProfile);
+    cardInfo.appendChild(pFollowers);
+    cardInfo.appendChild(pFollowing);
+    cardInfo.appendChild(pBio);
+
+    card.appendChild(newImage);
+    card.appendChild(cardInfo);
+
+    document.body.appendChild(card);
 };
 
 axios.get("https://api.github.com/users/Marina8989");
