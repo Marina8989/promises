@@ -72,6 +72,15 @@ const mar = obj => {
         "https://previews.123rf.com/images/captainvector/captainvector1602/captainvector160218152/52863657-smiley-face-showing-thumbs-up.jpg";
     cardInfo.classList.add(card - info);
     h3.classList.add("name");
+    pUserName.classList.add("username");
+
+    pLocation.textContent = "Location: ";
+    pProfile.textContent = "Profile: ";
+    pFollowers.textContent = "Followers: ";
+    pFollowing.textContent = "Following: ";
+    pBio.textContent = "Bio: ";
+
+    pProfile.appendChild(a);
 };
 
 axios.get("https://api.github.com/users/Marina8989");
